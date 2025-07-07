@@ -1,4 +1,4 @@
-## Solutions in Go for the Coding Problems from Cassidy William's Newsletter
+## Solutions in Go for the Coding Problems from Cassidy Williams' Newsletter
 
 This repository contains solutions written in Go, for the **interview question of the week** section problems published in the newsletter [Rendezvous with cassidoo](https://cassidoo.co/newsletter/)
 
