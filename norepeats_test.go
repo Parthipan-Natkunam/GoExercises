@@ -37,7 +37,7 @@ func TestNonRepeat(t *testing.T) {
 		t.Run(tc.name, func(t *testing.T) {
 			lastUniqueChar := norepeats.NonRepeat(tc.input)
 			if lastUniqueChar != tc.expectedLastChar {
-				t.Errorf("Expected finale start index %d, got %d", tc.expectedLastChar, lastUniqueChar)
+				t.Errorf("Expected last non-repat character '%c', got '%c'", tc.expectedLastChar, lastUniqueChar)
 			}
 		})
 	}
