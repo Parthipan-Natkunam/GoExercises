@@ -11,7 +11,7 @@ func TestGetFinaleStart(t *testing.T) {
 		expectedIndex int
 	}{
 		{
-			name: "Test case 1",
+			name: "Base Case",
 			input: []Firework{
 				{Height: 10, Size: 6, Velocity: 4},
 				{Height: 13, Size: 3, Velocity: 2},
@@ -23,7 +23,7 @@ func TestGetFinaleStart(t *testing.T) {
 			expectedIndex: 2,
 		},
 		{
-			name: "Test case 2",
+			name: "Multiple Subsequences With Varying Lengths",
 			input: []Firework{
 				{Height: 10, Size: 6, Velocity: 4},
 				{Height: 13, Size: 3, Velocity: 2},
@@ -44,12 +44,12 @@ func TestGetFinaleStart(t *testing.T) {
 			expectedIndex: 7,
 		},
 		{
-			name:          "Test case 3",
+			name:          "Empty Input",
 			input:         []Firework{},
 			expectedIndex: -1,
 		},
 		{
-			name: "Test case 4",
+			name: "Single Firework",
 			input: []Firework{
 				{Height: 10, Size: 6, Velocity: 4},
 			},
