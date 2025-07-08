@@ -11,22 +11,22 @@ func TestNonRepeat(t *testing.T) {
 		expectedLastChar rune
 	}{
 		{
-			name: "Test case 1",
+			name: "Base Case",
 			input: "candy canes do taste yummy",
 			expectedLastChar: 'u',
 		},
 		{
-			name: "Test case 2",
+			name: "Last Character",
 			input: "hello world",
 			expectedLastChar: 'd',
 		},
 		{
-			name: "Test case 3",
+			name: "Empty String",
 			input: " ",
 			expectedLastChar: ' ',
 		},
 		{
-			name: "Test case 4",
+			name: "No Unique Characters",
 			input: "aabbccddeeff gghhii",
 			expectedLastChar: ' ',
 		},
