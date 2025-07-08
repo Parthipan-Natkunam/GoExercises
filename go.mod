@@ -1,3 +1,3 @@
-module go_excercises
+module goexcercises
 
 go 1.24.1

@@ -2,7 +2,7 @@ package main
 
 
 import (
-	"go_excercises/fireworks"
+	"goexcercises/fireworks"
 	"fmt"
 	"time"
 )
