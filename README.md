@@ -16,5 +16,5 @@ This repository contains solutions written in Go, for the **interview question o
    ```
 3. Run the tests using the following command:
    ```bash
-   go test
+   go test -v ./...
    ```

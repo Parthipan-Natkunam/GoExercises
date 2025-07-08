@@ -1,7 +1,6 @@
-package main
+package norepeats
 
 import (
-	"goexcercises/norepeats"
 	"testing"
 )
 
@@ -35,7 +34,7 @@ func TestNonRepeat(t *testing.T) {
 
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
-			lastUniqueChar := norepeats.NonRepeat(tc.input)
+			lastUniqueChar := NonRepeat(tc.input)
 			if lastUniqueChar != tc.expectedLastChar {
 				t.Errorf("Expected last non-repat character '%c', got '%c'", tc.expectedLastChar, lastUniqueChar)
 			}

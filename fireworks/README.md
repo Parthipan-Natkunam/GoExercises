@@ -18,4 +18,4 @@ const fireworks = [
 
 ### Solution
 - [Implementation in Go](./fireworks.go)
-- [Unit Test Cases](../fireworks_test.go)
+- [Unit Test Cases](./fireworks_test.go)

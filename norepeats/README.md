@@ -9,5 +9,5 @@ Find the last non-repeating character in a given string. If all characters repea
 ```
 
 ### Solution
-- [Implementation in Go](norepeats.go)
-- [Unit Test Cases](../norepeats_test.go)
+- [Implementation in Go](./norepeats.go)
+- [Unit Test Cases](./norepeats_test.go)

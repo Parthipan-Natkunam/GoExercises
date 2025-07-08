@@ -1,19 +1,18 @@
-package main
+package fireworks
 
 import (
-	"goexcercises/fireworks"
 	"testing"
 )
 
 func TestGetFinaleStart(t *testing.T) {
 	tests := []struct {
 		name          string
-		input         []fireworks.Firework
+		input         []Firework
 		expectedIndex int
 	}{
 		{
 			name: "Test case 1",
-			input: []fireworks.Firework{
+			input: []Firework{
 				{Height: 10, Size: 6, Velocity: 4},
 				{Height: 13, Size: 3, Velocity: 2},
 				{Height: 17, Size: 6, Velocity: 3},
@@ -25,7 +24,7 @@ func TestGetFinaleStart(t *testing.T) {
 		},
 		{
 			name: "Test case 2",
-			input: []fireworks.Firework{
+			input: []Firework{
 				{Height: 10, Size: 6, Velocity: 4},
 				{Height: 13, Size: 3, Velocity: 2},
 				{Height: 17, Size: 6, Velocity: 3},
@@ -45,13 +44,13 @@ func TestGetFinaleStart(t *testing.T) {
 			expectedIndex: 7,
 		},
 		{
-			name: "Test case 3",
-			input: []fireworks.Firework{},
+			name:          "Test case 3",
+			input:         []Firework{},
 			expectedIndex: -1,
 		},
 		{
 			name: "Test case 4",
-			input: []fireworks.Firework{
+			input: []Firework{
 				{Height: 10, Size: 6, Velocity: 4},
 			},
 			expectedIndex: 0,
@@ -60,7 +59,7 @@ func TestGetFinaleStart(t *testing.T) {
 
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
-			startIndex := fireworks.GetFinaleStart(tc.input)
+			startIndex := GetFinaleStart(tc.input)
 			if startIndex != tc.expectedIndex {
 				t.Errorf("Expected finale start index %d, got %d", tc.expectedIndex, startIndex)
 			}
