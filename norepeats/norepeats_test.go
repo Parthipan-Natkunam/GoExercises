@@ -35,6 +35,11 @@ func TestNonRepeat(t *testing.T) {
 			input: "alle menschen sind schön",
 			expectedLastChar: 'ö',
 		},
+		{
+			name: "Emoji Characters",
+			input: "hello 🌍, how are you? 😊",
+			expectedLastChar: '😊',
+		},
 	}
 
 	for _, tc := range tests {
