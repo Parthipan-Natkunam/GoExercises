@@ -7,6 +7,12 @@ This repository contains solutions written in Go, for the **interview question o
 - [Fireworks](fireworks/README.md): From newsletter Thelonious Monk (2025-07-07)
 - [No Repeats](norepeats/README.md): From newsletter E.E. Cummings (2025-06-30)
 
+### Directory Structure
+The solution to each problem is contained as a standalone package in its own directory. Each directory contains:
+- `README.md`: Problem description and solution details.
+- `<problemName>.go`: The Go implementation of the solution.
+- `<problemName>_test.go`: Unit tests for the solution.
+
 ### How to Run the Tests
 
 1. Clone the repository.
