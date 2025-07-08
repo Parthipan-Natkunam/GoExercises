@@ -4,8 +4,8 @@ This repository contains solutions written in Go, for the **interview question o
 
 ### Solutions
 
-- [Fireworks](fireworks/README.md): From newsletter Thelonious Monk (2025-07-07)
-- [No Repeats](norepeats/README.md): From newsletter E.E. Cummings (2025-06-30)
+- [Fireworks](fireworks): From newsletter Thelonious Monk (2025-07-07)
+- [No Repeats](norepeats): From newsletter E.E. Cummings (2025-06-30)
 
 ### Directory Structure
 The solution to each problem is contained as a standalone package in its own directory. Each directory contains:
