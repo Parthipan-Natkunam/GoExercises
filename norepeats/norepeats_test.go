@@ -30,6 +30,11 @@ func TestNonRepeat(t *testing.T) {
 			input: "aabbccddeeff gghhii",
 			expectedLastChar: ' ',
 		},
+		{
+			name: "Accented Characters",
+			input: "alle menschen sind schön",
+			expectedLastChar: 'ö',
+		},
 	}
 
 	for _, tc := range tests {
