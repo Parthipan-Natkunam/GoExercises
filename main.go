@@ -1,28 +1,21 @@
 package main
 
-
 import (
-	"goexcercises/fireworks"
 	"fmt"
+	"goexcercises/norepeats"
 	"time"
 )
 
 func main() {
-	fireworkData := []fireworks.Firework{
-		{Height: 10, Size: 6, Velocity: 4},
-		{Height: 13, Size: 3, Velocity: 2},
-		{Height: 17, Size: 6, Velocity: 3},
-		{Height: 21, Size: 8, Velocity: 4},
-		{Height: 19, Size: 5, Velocity: 3},
-		{Height: 18, Size: 4, Velocity: 4},
-	}
 
+	sentence := "candy canes do taste yummy"
 	start := time.Now()
 
-	startIndex := fireworks.GetFinaleStart(fireworkData)
+	lastUniqueChar := norepeats.NonRepeat(sentence)
 
 	elapsed := time.Since(start)
 
-	fmt.Println("The finale starts at index:", startIndex)
+	fmt.Println("Lasr non-repeat:", string(lastUniqueChar))
+
 	fmt.Printf("Function took: %v\n", elapsed)
 }
