@@ -4,6 +4,7 @@ This repository contains solutions written in Go, for the **interview question o
 
 ### Solutions
 
+- [Hyperfactorial](hyperfactorial): From newsletter Gloria Steinem (2025-09-29)
 - [Fireworks](fireworks): From newsletter Thelonious Monk (2025-07-07)
 - [No Repeats](norepeats): From newsletter E.E. Cummings (2025-06-30)
 
