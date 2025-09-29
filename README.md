@@ -25,3 +25,11 @@ The solution to each problem is contained as a standalone package in its own dir
    ```bash
    go test -v ./...
    ```
+
+### Using the Solution Template Generator
+A Go script is provided to generate a template for new problem solutions. To use it:
+```bash
+go run main.go
+```
+
+This will create a new directory with the necessary files for a new problem solution.
